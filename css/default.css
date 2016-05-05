@@ -1,0 +1,345 @@
+.logo{
+	padding: 20px;
+	width:500px;
+	float: left;
+}
+.navbar{
+	display: inline-block;
+	height: 6.5rem;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+  margin: 10px 0px 0px 20px;
+}
+.navbar-list{
+	list-style: none;
+	margin-bottom: 0;
+}
+.navbar-list .navbar-item{
+	float: left;
+	margin-bottom: 0;
+}
+.navbar .nav-link{
+	text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #222;
+}
+header{
+	margin-bottom: 0;
+}
+#slider-wrapper {
+  width: 940px;
+  height: 470px;
+  margin: 50px auto;
+  position: relative;
+  margin-bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+#s1 {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -36px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s2 {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -12px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s3 {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: 12px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s4 {
+  padding: 6px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: 36px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s1:hover,
+#s2:hover,
+#s3:hover,
+#s4:hover {
+  opacity: .50;
+}
+
+.inner-wrapper {
+  width: 940px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.control {
+  display: none;
+}
+
+#Slide1:checked ~ .overflow-wrapper {
+  margin-left: 0%;
+}
+
+#Slide2:checked ~ .overflow-wrapper {
+  margin-left: -100%;
+}
+
+#Slide3:checked ~ .overflow-wrapper {
+  margin-left: -200%;
+}
+
+#Slide4:checked ~ .overflow-wrapper {
+  margin-left: -300%;
+}
+
+#Slide1:checked + #s1 {
+  opacity: 1;
+}
+
+#Slide2:checked + #s2 {
+  opacity: 1;
+}
+
+#Slide3:checked + #s3 {
+  opacity: 1;
+}
+
+#Slide4:checked + #s4 {
+  opacity: 1;
+}
+
+.overflow-wrapper {
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.slide img {
+  width: 25%;
+  float: left;
+}
+
+.line{
+	width: 100%;
+	height: 2px;
+	background-color: #067818;
+	margin:2px auto;
+}
+.left{
+	/*border:2px solid #0C696E;*/
+}
+.right{
+	/*border:2px solid #0C696E;*/
+}
+.notifications a{
+	text-decoration: none;
+}
+
+.footer{
+  height: 30px;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+.footer p{
+
+}
+.scroll{
+  height:100px;
+  overflow: hidden;
+}
+.notification-page{
+  margin: 0px auto;
+}
+.namearea input{
+  width: 100%;
+}
+
+/* css3 photo gallery styles */
+.gallery {
+    width:610px;
+    margin:0 auto;
+}
+.gallery a {
+    display:inline-block;
+    height:150px;
+    position:relative;
+    width:200px;
+}
+.gallery a img {
+    border:5px solid #fff;
+    cursor:pointer;
+    display:block;
+    height:100%;
+    left:0px;
+    position:absolute;
+    top:0px;
+    width:100%;
+    z-index:1;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -moz-transition-duration:0.5s;
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -o-transition-duration:0.5s;
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+    transition-duration:0.5s;
+}
+.gallery a:focus img {
+    border:15px solid #fff;
+    cursor:default;
+    height:250%;
+    position:absolute;
+    width:250%;
+    z-index:25;
+
+    box-shadow:1px 1px 5px #888;
+    -moz-box-shadow:1px 1px 5px #888;
+    -webkit-box-shadow:1px 1px 5px #888;
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -moz-transition-duration:0.5s;
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -o-transition-duration:0.5s;
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+    transition-duration:0.5s;
+}
+
+/* custom focus rules */
+.gallery a:focus:nth-child(3n+1) img {
+left:150px;
+}
+.gallery a:focus:nth-child(3n+2) img {
+    left:-50px;
+}
+.gallery a:focus:nth-child(3n+3) img {
+    left:-250px;
+}
+.gallery a:focus:nth-child(-n+3) img {
+    top:140px;
+}
+.gallery a:focus:nth-child(n+7) img {
+    top:-150px;
+}
+.gallery a:focus:nth-child(n+10) img {
+    top:-295px;
+}
+
+/* extra close layer */
+.gallery .close {
+    background:transparent;
+    cursor:pointer;
+    display:none;
+    height:352px;
+    left:170px;
+    position:absolute;
+    top:160px;
+    width:500px;
+    z-index:30;
+}
+.gallery a:focus ~ .close {
+    display:block;
+}
+
+/***********************************/
+/*for about us page table of faculities*/
+.fac
+{
+   // margin-left:60px;
+   // margin-bottom:20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color:#99cccc;
+    font-weight: 300;
+}
+
+.fac th
+{
+    color: green;
+}
+
+/******************************************/
+/*the stuff in the students page*/
+
+.dca{
+	diplay:block;
+	
+	margin-top:20px;
+	margin-bottom:20px;
+	border:3px solid green;
+	border-radius:10px;
+	padding:5px;
+	position:relative;
+	
+}
+
+.globe
+{
+	border:5px solid green;
+	position:absolute;
+	top:500px;
+	
+}
+
+.internal td{
+  text-align: center;
+}
